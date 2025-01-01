@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Amazon</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+      <!-- Bootstrap Bundle with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize all popovers
+    document.addEventListener('DOMContentLoaded', function () {
+      const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    });
+  </script>
+  <style>
+    #para{
+      position: absolute;
+      top: 85%;
+    }
+    #cards{
+      position: absolute;
+      top: 95%;
+    }
+    #foot span{
+      display: block;
+      line-height: 30px;
+    }
+    #footer1{
+      display: grid;
+        grid-template-columns: 6fr 6fr;
+        }
+        #icon span {
+          display: inline;
+        }
+        #nav2{
+          background-color: rgb(15, 47, 74);
+         position: absolute;
+         top: 15%;
+        
+         width: 100%;
+        }
+      #nav1{
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: 2;
+        top: 0px;
+      }
+      #article{
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      #poster{
+        margin-top: 10%;
+      }
+      @media(max-width: 800px){
+        #nav1{
+          display: none;
+        }
+       #nav2{
+        position: unset;
+        margin: 10px;
+        margin-bottom: 0;
+       }
+        #poster{
+          margin-top: 0%;
+         
+        }
+        #para{
+          top: 30%;
+        }
+       #cards{
+        top: 40%;
+       }
+       #article {
+        display: block;
+       }
+      }
+    </style>
+  </style>
+</head>
+<body >
+  <!--for mobile-->
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Amazon</a>
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <nav id="nav1" class="  bg-dark  text-light w-100  p-3  ">
+    
+   
+ 
+    <!--col1-->
+    <div class="h3">
+      Amazon
+    </div>
+    <!--col2-->
+    <div class="mt-1">
+      <span class="bi bi-geo-alt-fill"> India</span>
+    </div>
+    <!--Col3-->
+    <div class=" w-50 m-2" >
+      <div class="input-group w-100 ">
+        <select name="" class="input-group-text  bg-body-secondary">
+              <option value="">ALL</option>
+              <option value="">Electronics</option>
+              <option value="">Footwear</option>
+          </select>
+          <input type="text" placeholder="Search Amazon.in" class="form-control input-group-text w-50">
+          <button class="btn btn-warning ">
+            <span class="bi bi-search"></span>
+          </button>
+        </div>
+      </div>
+      <!--col4-->
+      <div>
+        <select name="" class="input-group-text w-75 bg-dark border-0 text-light fw-bold fs-6">
+          <option value="">EN</option>
+          <option value="">Electronics</option>
+          <option value="">Footwear</option>
+      </select>
+      </div>
+      <!--col5-->
+      <button type="button" class="btn btn-dark" data-bs-toggle="popover" data-bs-placement="left" title="Digital Content & Devices" data-bs-target="focus" data-bs-content="Amazon Music">
+        <div class="text-white-50" style="font-size: 13px;">Hello,Sign in</div>
+        <div>
+          <select name="" class="input-group-text w-100 bg-transparent text-light border-0 fw-bold   " style="font-size: 14px; padding-top: -20px;">
+            <option value="" class="text-dark ">Account & Lists</option>
+            <option value="" class="text-dark">Electronics</option>
+            <option value="" class="text-dark">Footwear</option>
+          </select>
+        </div>
+      </button>
+      
+      <!--col6-->
+      <div>
+        <div>Returns</div>
+        <div class="fw-bold " >& Orders</div>
+      </div>
+      <!--col7-->
+      <button type="button" class="btn btn-dark" data-bs-toggle="popover" data-bs-placement="bottom" title="Cart" data-bs-target="focus" data-bs-content="Click here to Open Cart">
+      
+        <Span class="bi bi-cart fs-4">Cart</Span>
+      
+      </button>
+    </nav>
+  
+ 
+  <nav id="nav2" class=" text-light row p-1  ">
+    <!--Offcanvas-->
+    <div class="col-2">
+ 
+   
+     <button class="btn btn-primary bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >
+       <span class="bi bi-list">All</span>
+     </button>
+     
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+         <div>
+           Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+         </div>
+         <div class="dropdown mt-2">
+           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+             Dropdown button
+           </button>
+           <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">Action</a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+           </ul>
+         </div>
+       </div>
+     </div> 
+   </div>
+     <!--col2-->
+     <div class="col mt-2">
+       Today's Deal
+     </div>
+     <!--col3-->
+     <div class="col mt-2">
+       Customer Service
+     </div>
+     <!--col4-->
+     <div class="col mt-2">
+       Registry
+     </div>
+     <!--col5-->
+     <div class="col mt-2">
+       Gift Cards
+     </div>
+     <!--col6-->
+     <div class="col mt-2">
+       Sell
+     </div>
+   </nav>
+ 
+  <!--poster-->
+  <main id="poster" >
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/poster1.jpg" class="d-block img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/poster2.jpg" class="d-block img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/poster3.jpg" class="d-block img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+  <!--cards-->
+  <p id="para" class="  container-fluid text-center position-absolute p-2 bg-light-subtle ">
+    You are on amazon.com . You can also shop on Amazon India for million of products with fast local delivery
+    <a href="https://www.amazon.in/ " class="text-decoration-none">Click here to go Amazon.in</a>
+  </p>
+  <!--card section-->
+  <section id="cards" class="position-absolute top-25">
+  <Article id="article" class=" ">
+      <!--first card-->
+      <div class=" w-100 bg-light p-3 border m-3">
+
+    
+      <div  class="row ">
+        <figure class="figure col ">
+          <img src="/kitchen.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center ">kitchen & dining</figcaption>
+        </figure>
+        <figure class="figure col ">
+          <img src="/home.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Home improvement</figcaption>
+        </figure>
+      </div>
+      <div  class="row">
+        <figure class="figure col">
+          <img src="/decor.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Decor</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="/bedding.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Bedding & bath</figcaption>
+        </figure>
+      </div>
+      <p>
+        <a href="https://www.amazon.com/s?k=home&i=garden&rh=n%3A1055398%2Cp_36%3A-5000&s=exact-aware-popularity-rank&dc&_encoding=UTF8&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pd_rd_r=572af326-e292-4639-b2a3-de40ea364817&pd_rd_w=RW9qs&pd_rd_wg=XrXRV&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=KKVNXYTZ0BMXP2PJDH8D&ref=pd_hp_d_atf_unk" class="text-decoration-none">
+          Shop the last from Home
+        </a>
+      </p>
+    </div>
+    <!--second Card-->
+    <div class="w-100 bg-light p-3 border m-3 ">
+
+    
+      <div  class="row ">
+        <figure class="figure col">
+          <img src="/kitchen.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">kitchen & dining</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="/home.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Home improvement</figcaption>
+        </figure>
+      </div>
+      <div  class="row">
+        <figure class="figure col">
+          <img src="/decor.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Decor</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="/bedding.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Bedding & bath</figcaption>
+        </figure>
+      </div>
+      <p>
+        <a href="https://www.amazon.com/s?k=home&i=garden&rh=n%3A1055398%2Cp_36%3A-5000&s=exact-aware-popularity-rank&dc&_encoding=UTF8&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pd_rd_r=572af326-e292-4639-b2a3-de40ea364817&pd_rd_w=RW9qs&pd_rd_wg=XrXRV&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=KKVNXYTZ0BMXP2PJDH8D&ref=pd_hp_d_atf_unk" class="text-decoration-none">
+          Shop the last from Home
+        </a>
+      </p>
+    </div>
+    <!--third card-->
+    <div class="w-100 bg-light p-3 border m-3">
+
+    
+      <div  class="row ">
+        <figure class="figure col">
+          <img src="/cleaning.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Cleaning Tools</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="/home-storage.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Home Storage</figcaption>
+        </figure>
+      </div>
+      <div  class="row">
+        <figure class="figure col">
+          <img src="/homr-decor.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Home Decor</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="/Bedding-shop.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Bedding </figcaption>
+        </figure>
+      </div>
+      <p>
+        <a href="https://www.amazon.com/s?k=home&_encoding=UTF8&content-id=amzn1.sym.83009b1f-702c-4be7-814b-0240b8f687d2&pd_rd_r=5daeeefe-9283-4da4-8800-895906db3c0e&pd_rd_w=GYgl1&pd_rd_wg=q5TFq&pf_rd_p=83009b1f-702c-4be7-814b-0240b8f687d2&pf_rd_r=ZRQV6182VYNBC37ZS87B&ref=pd_hp_d_atf_unk" class="text-decoration-none">
+          Discover more in home
+        </a>
+      </p>
+    </div>
+  
+  </Article>
+  <Article id="article" class=" mt-1 ">
+      <!--first card-->
+      <div class=" w-100 bg-light p-3 border m-3">
+
+    
+      <div  class="row  ">
+        <figure class="figure col ">
+          <img src="jeans.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center ">Jeans under $50</figcaption>
+        </figure>
+        <figure class="figure col ">
+          <img src="/top.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Tops under $25</figcaption>
+        </figure>
+      </div>
+      <div  class="row ">
+        <figure class="figure col">
+          <img src="/dress.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Dresses under $30</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="/shoes.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Shoes under $50</figcaption>
+        </figure>
+      </div>
+      <p>
+        <a href="https://www.amazon.com/events/wintersale?deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%252215E8DB96732AF8CA9C14916141BB1C4C%2522%252C%2522departments%2522%253A%255B%25227147440011%2522%252C%25227192394011%2522%252C%2522679337011%2522%252C%25226358543011%2522%255D%252C%2522sorting%2522%253A%2522FEATURED%2522%257D&pd_rd_wg=q5TFq&ref_=nav_cs_gb&pd_rd_w=lHrHP&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&ie=UTF8&pd_rd_r=5daeeefe-9283-4da4-8800-895906db3c0e&bubble-id=15E8DB96732AF8CA9C14916141BB1C4C" class="text-decoration-none">
+          See all deals
+        </a>
+      </p>
+    </div>
+    <!--second Card-->
+    <div class="w-100 bg-light p-3 border m-3">
+
+    
+      <div  class="row ">
+        <figure class="figure col">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center"></figcaption>
+        </figure>
+       
+      </div>
+      <p>
+        <a href="https://www.amazon.com/s?k=toys&rh=p_36%3A-2500&_encoding=UTF8&content-id=amzn1.sym.44da4965-9668-4613-bec2-a3a75f0c2ad4&pd_rd_r=5daeeefe-9283-4da4-8800-895906db3c0e&pd_rd_w=qJT28&pd_rd_wg=q5TFq&pf_rd_p=44da4965-9668-4613-bec2-a3a75f0c2ad4&pf_rd_r=ZRQV6182VYNBC37ZS87B&ref=pd_hp_d_atf_unk" class="text-decoration-none">
+          Shop now
+        </a>
+      </p>
+    </div>
+    <!--third card-->
+    <div class="w-100 bg-light p-3 border m-3">
+
+    
+      <div  class="row ">
+        <figure class="figure col">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Dining</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Home </figcaption>
+        </figure>
+      </div>
+      <div  class="row">
+        <figure class="figure col">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Kitchen</figcaption>
+        </figure>
+        <figure class="figure col">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-center">Health Care</figcaption>
+        </figure>
+       
+      </div>
+      <p>
+        <a href="https://www.amazon.com/s?k=home+and+kitchen&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&pd_rd_r=5daeeefe-9283-4da4-8800-895906db3c0e&pd_rd_w=j11AE&pd_rd_wg=q5TFq&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=ZRQV6182VYNBC37ZS87B&ref=pd_hp_d_atf_unk" class="text-decoration-none">
+         See more
+        </a>
+      </p>
+    </div>
+   
+
+    
+  </Article>
+ 
+         
+     
+  
+ 
+      <footer id="footer1" class="container-fluid bg-dark p-4 text-light border-bottom ">
+<!--first part-->
+          <div class="column-left row col me-4 ">
+
+              <div id="foot" class="col">
+                <span  class="text-warning mb-3">ABOUT</span>
+                      <span> Contact Us</span>
+                      <span> About Us</span>
+                      <span> Careers</span> 
+                      <span> Flipkart Stories</span>
+                      <span> Press</span> 
+                      <span>Corporate Information </span>
+              </div>
+              <div id="foot" class="col" >
+                <span  class="footer-name  text-warning mb-3">GROUP COMPANIES</span>
+                      <span>Myntra</span>
+                      <span>Cleartrip</span>
+                      <span>Shopsy</span>
+              </div>
+              <div id="foot" class="col">
+                <span  class="footer-name text-warning mb-3">HELP</span> 
+                      <span>Payment</span>
+                      <span>Shipping</span>
+                      <span>Cancelling</span>
+                      <span>Returns</span>
+                      <span>FAQ</span>
+                      <span>Report Infringement</span>
+              </div>
+              <div id="foot" class="col">
+                <span  class="footer-name text-warning mb-3">CONSUMER POLICY </span>
+                      <span>Returns</span>
+                      <span> Terms of Use</span>
+                      <span>Security</span>
+                      <span>Privacy</span>
+                      <span>Sitemap</span>
+                      <span>Grievance Redressal</span>
+                      <span>EPR Compliance </span>
+              </div>
+              
+          </div>
+          <!--second part-->
+          <div id="foot" class="column-right row  border-start ps-4 ">
+
+              <div class="col">
+                <span  class="footer-name  text-warning mb-3 ">Mail Us:</span>
+                      <span >Flipkart Internet Private Limited,</span>
+                      <span>Building Alyssa, Begonia &</span>
+                      <span> Clove Embassy Tech Village,</span>
+                      <span> Outer Ring Road,Devarabeesanahalli Village,</span>
+                      <span>Bengaluru,560103</span>
+                      <span> Karnatak,India</span>
+                      <span class=" text-warning mb-1 mt-4" > Social:</span>
+                     <div id="icon">
+                      <span  class="bi bi-facebook fs-3"></span>
+                      <span  class="bi bi-twitter-x fs-3"> </span>
+                      <span  class="bi bi-youtube fs-3"></span>
+                     </div>
+              </div>
+          <div id="foot" class="col ">
+            <span class="footer-name  text-warning mb-3">Register Office Address:</span>
+                  <span>Flipkart Internet Private Limited,</span>
+                  <span>Building Alyssa, Begonia &</span>
+                  <span>Clove Embassy Tech Village,</span>
+                  <span> Outer Ring Road,Devarabeesanahalli Village,</span>
+                  <span>Bengaluru,560103</span>
+                  <span> Karnatak,India</span>
+                  <span> CIN:U51109KA2012PTC066107</span>
+                  <span> Telephone:044-4561700/044-67415800</span>
+          </div>
+      </div>
+      </footer>
+      <footer id="footer2" class="bg-dark text-light p-5 ">
+        <div class="row">
+
+        
+          <div  class="col"  >
+              <span class="bi bi-shop-window text-warning p-2"></span>
+              <span>Become a Seller</span>
+          </div>
+          <div  class="col">
+              <span class="bi-star-fill text-warning p-2"></span>
+              <span>Advertise</span>
+          </div>
+          <div   class="col">
+              <span class="bi bi-gift text-warning p-2"></span>
+              <span>Gift Cards</span>
+          </div>
+          <div  class="col">
+              <span  class="bi-question-circle text-warning p-2"></span>
+              <span>Help Center</span>
+          </div>
+          <div  class="col">
+              <span class="bi bi-c-circle text-warning p-2"></span>
+              <span>2007-2024 Flipkart.com</span>
+          </div>
+        </div>
+      </footer>
+     
+</section>
+  </body>
+</html>
